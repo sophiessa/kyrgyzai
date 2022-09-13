@@ -37,7 +37,7 @@ function Star() {
         opacity = (rad > starsParams.extinction) ? 1.5 * (2 - rad / starsParams.extinction) : 1;
 
         starsCtx.beginPath();
-        starsCtx.fillStyle = "rgba(200, 40, 180, " + opacity + ")";
+        starsCtx.fillStyle = "rgba(255, 255, 255, " + opacity + ")";
         starsCtx.arc(x, y, rad, 0, Math.PI * 2);
         starsCtx.fill();
     }
